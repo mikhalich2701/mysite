@@ -1,0 +1,377 @@
+doctype html
+html(lang='ru')
+	head
+		include layout/head.pug
+	body
+		header.header
+			.container-fluid
+				.row.d-flex.justify-content-lg-around.justify-content-md-start.align-items-center
+					.header__logo
+						a.header__logo-name(href="#") 
+							img(src="img/Logo.png", alt="Логотип")
+					.header__btnGuide.btnGuide
+						span.btnGuide__content
+					nav.header__navbar.navbar
+						ul.navbar__nav.navbar__nav--header
+							li.navbar__item.navbar__item--header
+								a.navbar__link.navbar__link--header(href="#about")
+									span Обо мне
+							li.navbar__item.navbar__item--header
+								a.navbar__link.navbar__link--header(href="#skills")
+									span Навыки
+							li.navbar__item.navbar__item--header
+								a.navbar__link.navbar__link--header(href="#pageproofs")
+									span Верстка
+							li.navbar__item.navbar__item--header
+								a.navbar__link.navbar__link--header(href="#work")
+									span Портфолио
+							li.navbar__item.navbar__item--header
+								a.navbar__link.navbar__link--header(href="#contact")
+									span Контакты
+							li.navbar__item.navbar__item--header
+								a.navbar__link.navbar__link--header(href="#feedback")
+									span Заявка
+		main.main
+			section.profile
+				.btnScroll
+					i.fa.fa-chevron-up(aria-hidden="true")
+				.container.d-flex.h-100.justify-content-center.align-items-center
+					.row.justify-content-center
+						.col-lg-12.col-md-auto
+							.profile__info
+								h3.profile__subtitle.subtitle.wow.bounceInLeft HTML / CSS / JS
+								h1.profile__name.wow.bounceInRight
+									| Добрый день
+									br
+									| я Алексей Михайловский
+									br
+									span HTML верстальщик
+			section.aboutMe
+				.container
+					#about.sectionTitle.wow.slideInUp
+						h2#about.sectionTitle__text Обо мне
+						.sectionTitle__icon
+							i.fa.fa-user(aria-hidden="true")
+					.row
+						.col
+							p.aboutMe__info
+								| Приветствую Вас на своем сайте-портфолио. Меня зовут Алескей. Живу в Москве. Занимаюсь HTML-версткой сайтов.  У меня полностью кроссбраузерная, адаптивная и валидная верстка. Для обеспечения выполнения требований, предъявляемых к верстке сайта в процессе работы над проектом я использую сборщик проектов Gulp для автоматизации процесса верстки, препроцессоры Less/Sass для ускоренной стилизации сайта и более гибкого кода, шаблонизатор Pug, Pixel Perfect для верстки, совпадающей с предоставленным макетом «пиксель в пиксель», БЭМ, Bootstrap, Smartgrid и media-запросы для адаптивной верстки сайта. Динамика сайта организуется собственным jQuery кодом или настроенными плагинами. В конце работы осуществляется проверка отображения верстки в различных браузерах на разных устройствах, код проверяется валидатором на соответствие стандартам и устраняются выявленные ошибки.
+			section.skills
+				.container
+					#skills.sectionTitle.sectionTitle--white.wow.slideInUp
+						h2#about.sectionTitle__text Мои навыки
+						.sectionTitle__icon.sectionTitle__icon--white
+							i.fa.fa-cog(aria-hidden="true")
+					.row
+						.col-lg-4.col-md-6
+							.skillItem
+								h4.skillItem__title.subtitle HTML5/CSS3
+								ul.skillItem__list
+									li.skillItem__skill
+										| Валидный, кроссбраузерный код
+									li.skillItem__skill
+										| Семантичная верстка
+									li.skillItem__skill
+										| Структутированный код
+									li.skillItem__skill
+										| Анимация, hover-эффекты без JS
+									li.skillItem__skill
+										| PixelPerfect
+									li.skillItem__skill
+										| Методология БЭМ
+						.col-lg-4.col-md-6
+							.skillItem
+								h4.skillItem__title.subtitle Javascript/JQuery
+								ul.skillItem__list
+									li.skillItem__skill
+										| Свой Javascript/JQuery код
+									li.skillItem__skill
+										| Настроенные JQuery плагины
+									li.skillItem__skill
+										| API Карт - Яндекс
+									li.skillItem__skill
+										| Комментируемый код
+						.col-lg-4.col-md-6
+							.skillItem
+								h4.skillItem__title.subtitle Photoshop/Figma
+								ul.skillItem__list
+									li.skillItem__skill
+										| Нарезка изображений из макета
+									li.skillItem__skill
+										| Оптимизация изображений для Web
+									li.skillItem__skill
+										| Экспорт SVG-изображений
+									li.skillItem__skill
+										| Экспорт стилей для ускоренной верстки
+									li.skillItem__skill
+										| Создание спрайтов
+						.col-lg-4.col-md-6
+							.skillItem
+								h4.skillItem__title.subtitle Gulp/Pug
+								ul.skillItem__list
+									li.skillItem__skill
+										| Быстрое разворачивание проекта
+									li.skillItem__skill
+										| Автоматизация процесса верстки
+									li.skillItem__skill
+										| Компиляция препроцессоров
+									li.skillItem__skill
+										| Использование шаблонизаторов 
+									li.skillItem__skill
+										| Минификация файлов
+						.col-lg-4.col-md-6
+							.skillItem
+								h4.skillItem__title.subtitle Bootstrap/Smart-grid
+								ul.skillItem__list
+									li.skillItem__skill
+										| Высокая скорость разработки сайта
+									li.skillItem__skill
+										| Кроссбраузерность и адаптивность сайта
+									li.skillItem__skill
+										| Готовые шаблоны элементов сайта
+									li.skillItem__skill
+										| Оптимизированная навигация
+						.col-lg-4.col-md-6
+							.skillItem
+								h4.skillItem__title.subtitle Less/Sass
+								ul.skillItem__list
+									li.skillItem__skill
+										| Ускоренная стилизация сайта
+									li.skillItem__skill
+										| Более гибкий код
+									li.skillItem__skill
+										| Улучшенная логика стилей
+									li.skillItem__skill
+										| Упрощенный синтаксис
+									li.skillItem__skill
+										| Вложенность селекторов без ошибок
+			section.pageProofs
+				.container
+					#pageproofs.sectionTitle.wow.slideInUp
+						h2#about.sectionTitle__text Процесс верстки
+						.sectionTitle__icon
+							i.fa.fa-legal(aria-hidden="true")
+					.row
+						.col-lg-2.col-md-4.col-sm-6
+							.step
+								.step__way.step__way--way1
+								.step__icon
+									i.fa.fa-scissors(aria-hidden="true")
+								p.step__name Работа с макетом
+						.col-lg-2.col-md-4.col-sm-6.wow.bounceInRight(data-wow-delay=".2s")
+							.step
+								.step__way.step__way--way2
+								p.step__name Верстка контента
+								.step__icon
+									i.fa.fa-html5(aria-hidden="true")
+						.col-lg-2.col-md-4.col-sm-6.wow.bounceInRight(data-wow-delay=".4s")
+							.step
+								.step__way.step__way--way3
+								.step__icon
+									i.fa.fa-css3(aria-hidden="true")
+								p.step__name Стилизация сайта
+						.col-lg-2.col-md-4.col-sm-6.wow.bounceInRight(data-wow-delay=".6s")
+							.step
+								.step__way.step__way--way4
+								p.step__name Адаптивная верстка
+								.step__icon
+									i.fa.fa-mobile(aria-hidden="true")
+						.col-lg-2.col-md-4.col-sm-6.wow.bounceInRight(data-wow-delay=".8s")
+							.step
+								.step__way.step__way--way5
+								.step__icon
+									i.fa.fa-internet-explorer(aria-hidden="true")
+								p.step__name Проверка в браузерах
+						.col-lg-2.col-md-4.col-sm-6.wow.bounceInRight(data-wow-delay="1s")
+							.step
+								p.step__name Устранение ошибок
+								.step__icon
+									i.fa.fa-exclamation-triangle(aria-hidden="true")
+					.row.justify-content-center
+						h3.pageProofs__resurseTitle Что я использую в процессе верстки
+						.slider
+							.slider__button.slider__button--prev
+								i.fa.fa-chevron-left(aria-hidden="true")
+							.slider__button.slider__button--next
+								i.fa.fa-chevron-right(aria-hidden="true")
+							.slider__row
+								.slider__item
+									img.img(src="img/avocode-logo.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/bootstrap-logo.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/gulp-logo.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/html-logo.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/JavaScript.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/jquery-logo.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/less-logo.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/photoshop-logo.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/pixel-logo.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/sass.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/figma.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/pug.jpg" alt="Ресурсы")
+								.slider__item
+									img.img(src="img/smart.jpg" alt="Ресурсы")
+			section.works
+				.container
+					#work.sectionTitle.sectionTitle--white.wow.slideInUp
+						h2#about.sectionTitle__text Портфолио
+						.sectionTitle__icon.sectionTitle__icon--white
+							i.fa.fa-camera(aria-hidden="true")
+					.row.justify-content-center
+						nav.worksNav
+							ul.worksNav__nav
+								li.worksNav__item
+									a.button.worksNav__button.filter(data-filter="all") Все работы
+								li.worksNav__item
+									a.button.worksNav__button.filter(data-filter=".product") Выполненные
+								li.worksNav__item
+									a.button.worksNav__button.filter(data-filter=".bootstrap") Bootstrap
+								li.worksNav__item
+									a.button.worksNav__button.filter(data-filter=".smartgrid") Smartgrid
+								li.worksNav__item
+									a.button.worksNav__button.filter(data-filter=".adaptive") Без фреймворков
+					.row
+						#contianer.worksBox
+							.boxItem.bootstrap.product
+								.boxItem__way
+									.boxItem__content
+										p.boxItem__text Сборщик Gulp. Адаптив на bootstrap.Многостраничник. Сданный проект
+										a.button.boxItem__button(href="https://mikhalich2701.github.io/gmg/" target="_blank") Посмотреть
+								img.boxItem__img(src="img/gmg.jpg" alt="Сайт")
+							.boxItem.bootstrap
+								.boxItem__way
+									.boxItem__content
+										p.boxItem__text Сборщик Gulp. Адаптив на bootstrap
+										a.button.boxItem__button(href="https://mikhalich2701.github.io/introdiz/" target="_blank") Посмотреть
+								img.boxItem__img(src="img/introdiz.jpg" alt="Сайт")
+							.boxItem.bootstrap
+								.boxItem__way
+									.boxItem__content
+										p.boxItem__text Мой сайт. SVG-вариант
+										a.button.boxItem__button(href="http://mikhalich.su/newfolio/" target="_blank") Посмотреть
+								img.boxItem__img(src="img/newfolio.png" alt="Сайт")
+							.boxItem.bootstrap.product
+								.boxItem__way
+									.boxItem__content
+										p.boxItem__text Сборщик Gulp. Адаптив на bootstrap.Многостраничник. Сданный проект
+										a.button.boxItem__button(href="http://mikhalich.su/ido/" target="_blank") Посмотреть
+								img.boxItem__img(src="img/ido.png" alt="Сайт")
+							.boxItem.bootstrap.product
+								.boxItem__way
+									.boxItem__content
+										p.boxItem__text Сборщик Gulp. Адаптив на bootstrap. Сданный проект
+										a.button.boxItem__button(href="http://mikhalich.su/bigwin/" target="_blank") Посмотреть
+								img.boxItem__img(src="img/bigwin.png" alt="Сайт")
+							.boxItem.adaptive
+								.boxItem__way
+									.boxItem__content
+										p.boxItem__text Сайт с чистым js и адаптивом без фреймворков
+										a.button.boxItem__button(href="https://mikhalich2701.github.io/topclass/" target="_blank") Посмотреть
+								img.boxItem__img(src="img/topclass.jpg" alt="Сайт")
+							.boxItem.smartgrid
+								.boxItem__way
+									.boxItem__content
+										p.boxItem__text Сборщик Gulp. Адаптив на smartgrid. Многостраничник.
+										a.button.boxItem__button(href="https://mikhalich2701.github.io/socialagency/" target="_blank") Посмотреть
+								img.boxItem__img(src="img/social.jpg" alt="Сайт")
+							.boxItem.bootstrap.product
+								.boxItem__way
+									.boxItem__content
+										p.boxItem__text Сборщик Gulp. Адаптив на bootstrap.Многостраничник. Сданный проект
+										a.button.boxItem__button(href="http://mikhalich.su/nano/" target="_blank") Посмотреть
+								img.boxItem__img(src="img/nano.png" alt="Сайт")
+			section.contact
+				.container
+					#contact.sectionTitle.wow.slideInUp
+						h2#about.sectionTitle__text Контакты
+						.sectionTitle__icon
+							i.fa.fa-comment(aria-hidden="true")
+					.row
+						.col-lg-3.col-md-6
+							.contactItem.contactItem--hover-bg1
+								.contactItem__logo
+									i.fa.fa-map-marker(aria-hidden="true")
+								h5.contactItem__title Адрес
+								p.contactItem__text Russia
+								p.contactItem__text Moscow
+						.col-lg-3.col-md-6
+							.contactItem.contactItem--hover-bg2
+								.contactItem__logo
+									i.fa.fa-envelope-o(aria-hidden="true")
+								h5.contactItem__title Email
+								p.contactItem__text
+									a.contactItem__link(href="mailto:mikhalich2701@gmail.com") mikhalich2701@gmail.com
+								p.contactItem__text
+									a.contactItem__link(href="mailto:mikhalich2701@yandex.ru") mikhalich2701@yandex.ru
+						.col-lg-3.col-md-6
+							.contactItem.contactItem--hover-bg3
+								.contactItem__logo
+									i.fa.fa-mobile(aria-hidden="true")
+								h5.contactItem__title Phone
+								p.contactItem__text
+									a.contactItem__link(href="tel:+79263636824") +7 (926) 363 68 24 
+						.col-lg-3.col-md-6
+							.contactItem.contactItem--hover-bg4
+								.contactItem__logo
+									i.fa.fa-skype(aria-hidden="true")
+								h5.contactItem__title Skype
+								p.contactItem__text
+									a.contactItem__link(href="skype:live:mikhalich2701_1") live:mikhalich2701_1
+			section.feedback
+				.container
+					#feedback.sectionTitle.sectionTitle--white.wow.slideInUp
+						h2#about.sectionTitle__text Отправить заявку
+						.sectionTitle__icon.sectionTitle__icon--white
+							i.fa.fa-envelope(aria-hidden="true")
+					p.feedback__text
+						| Для того, чтобы определить сроки выполнеия и стоимость работ мне необходимы макеты сайта и техническое задание с требованиями по выполнению проекта.
+					form#myForm.form
+						.row
+							.col-md-6
+								.form__block
+									.form__row
+										input.form__enter(type="text", name="name", placeholder="Ваше имя")
+									.form__row
+										input.form__enter(type="email", name="email", placeholder="Ваш Email")
+									.form__row
+										input.form__enter(type="text", name="subject", placeholder="Тема")
+							.col-md-6
+								.form__block
+									.form__row
+										textarea.form__textarea(name="message", placeholder="Ваше сообщение")
+									button.form__button(type="submit")
+										| Отправить
+					#answer
+		footer.footer
+			.container
+				.row.justify-content-center
+					.footer__social.social
+						a.social__item.social__item--vk.wow.rollIn(href="https://vk.com/mikhaylovsky80" target="_blank" data-wow-duration="1s")
+							i.fa.fa-vk(aria-hidden="true")
+						a.social__item.social__item--facebook.wow.rollIn(href="https://www.facebook.com/profile.php?id=100008224726175&ref=bookmarks" target="_blank" data-wow-duration="1s" data-wow-delay=".1s")
+							i.fa.fa-facebook(aria-hidden="true")
+						a.social__item.social__item--ok.wow.rollIn(href="https://www.ok.ru/profile/524344028624" target="_blank" data-wow-duration="1s" data-wow-delay=".2s")
+							i.fa.fa-odnoklassniki(aria-hidden="true")
+						a.social__item.social__item--github.wow.rollIn(href="https://github.com/mikhalich2701" target="_blank" data-wow-duration="1s" data-wow-delay=".3s")
+							i.fa.fa-github-alt(aria-hidden="true")
+				.row.justify-content-center
+					p.footer__develop.wow.slideInUp
+						i.fa.fa-copyright(aria-hidden="true")
+						span Portfolio
+						|  2018 - Developed by 
+						span Alexey Mikhailovsky
+		include layout/scripts.pug
+
+
+
+	
