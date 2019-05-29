@@ -28,6 +28,7 @@
     <title>Алексей Михайловский - HTML верстальщик | Портфолио верстальщика</title>
   </head>
   <body>
+<<<<<<< HEAD
     <header class="header">
       <div class="headerUp">
         <div class="container-fluid">
@@ -69,10 +70,58 @@
               <div class="aboutMe__info">
                 <p class="aboutMe__text">Приветствую Вас на своем сайте-портфолио. Меня зовут Алескей. Живу в Москве. Занимаюсь HTML-версткой сайтов.  У меня полностью кроссбраузерная, адаптивная и валидная верстка. Для обеспечения выполнения требований, предъявляемых к верстке сайта в процессе работы над проектом я использую сборщик проектов Gulp для автоматизации процесса верстки, препроцессоры Less/Sass для ускоренной стилизации сайта и более гибкого кода, шаблонизатор Pug, Pixel Perfect для верстки, совпадающей с предоставленным макетом «пиксель в пиксель», БЭМ, Bootstrap, Smartgrid и media-запросы для адаптивной верстки сайта. Динамика сайта организуется собственным jQuery кодом или настроенными плагинами. В конце работы осуществляется проверка отображения верстки в различных браузерах на разных устройствах, код проверяется валидатором на соответствие стандартам и устраняются выявленные ошибки.</p>
               </div>
+=======
+    <!--HEADER-->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-lg-around justify-content-md-start align-items-center">
+          <div class="header__logo"><a class="header__logo-name" href="#"> <img src="img/Logo.png" alt="Логотип"></a></div>
+          <div class="header__btnGuide btnGuide"><span class="btnGuide__content"></span></div>
+          <nav class="header__navbar navbar">
+            <ul class="navbar__nav navbar__nav--header">
+              <li class="navbar__item navbar__item--header"><a class="navbar__link navbar__link--header" href="#about"><span>Обо мне</span></a></li>
+              <li class="navbar__item navbar__item--header"><a class="navbar__link navbar__link--header" href="#skills"><span>Навыки</span></a></li>
+              <li class="navbar__item navbar__item--header"><a class="navbar__link navbar__link--header" href="#pageproofs"><span>Верстка</span></a></li>
+              <li class="navbar__item navbar__item--header"><a class="navbar__link navbar__link--header" href="#work"><span>Портфолио</span></a></li>
+              <li class="navbar__item navbar__item--header"><a class="navbar__link navbar__link--header" href="#contact"><span>Контакты</span></a></li>
+              <li class="navbar__item navbar__item--header"><a class="navbar__link navbar__link--header" href="#feedback"><span>Заявка</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--MAIN-->
+    <main class="main">
+      <!--PROFILE-->
+      <section class="profile">
+        <div class="btnScroll"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+        <div class="container d-flex h-100 justify-content-center align-items-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-auto">
+              <div class="profile__info">
+                <h3 class="profile__subtitle subtitle wow bounceInLeft">HTML / CSS / JS</h3>
+                <h1 class="profile__name wow bounceInRight">Добрый день<br>я Алексей Михайловский<br><span>HTML верстальщик</span></h1>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!--ABOUTME-->
+      <section class="aboutMe">
+        <div class="container">
+          <div class="sectionTitle wow slideInUp" id="about">
+            <h2 class="sectionTitle__text" id="about">Обо мне</h2>
+            <div class="sectionTitle__icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="aboutMe__info">Приветствую Вас на своем сайте-портфолио. Меня зовут Алескей. Живу в Москве. Занимаюсь HTML-версткой сайтов.  У меня полностью кроссбраузерная, адаптивная и валидная верстка. Для обеспечения выполнения требований, предъявляемых к верстке сайта в процессе работы над проектом я использую сборщик проектов Gulp для автоматизации процесса верстки, препроцессоры Less/Sass для ускоренной стилизации сайта и более гибкого кода, шаблонизатор Pug, Pixel Perfect для верстки, совпадающей с предоставленным макетом «пиксель в пиксель», БЭМ, Bootstrap, Smartgrid и media-запросы для адаптивной верстки сайта. Динамика сайта организуется собственным jQuery кодом или настроенными плагинами. В конце работы осуществляется проверка отображения верстки в различных браузерах на разных устройствах, код проверяется валидатором на соответствие стандартам и устраняются выявленные ошибки.</p>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
+            </div>
+          </div>
+        </div>
+      </section>
+<<<<<<< HEAD
       <section class="skills">
         <div class="container">
           <h2 class="skills__title wow slideInUp" id="skills">Мои навыки</h2>
@@ -90,10 +139,31 @@
                   <li class="skills__text-item">Анимация, hover-эффекты без JS</li>
                   <li class="skills__text-item">PixelPerfect</li>
                   <li class="skills__text-item">Методология БЭМ</li>
+=======
+      <!--SKILLS-->
+      <section class="skills">
+        <div class="container">
+          <div class="sectionTitle sectionTitle--white wow slideInUp" id="skills">
+            <h2 class="sectionTitle__text" id="about">Мои навыки</h2>
+            <div class="sectionTitle__icon sectionTitle__icon--white"><i class="fa fa-cog" aria-hidden="true"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="skillItem">
+                <h4 class="skillItem__title subtitle">HTML5/CSS3</h4>
+                <ul class="skillItem__list">
+                  <li class="skillItem__skill">Валидный, кроссбраузерный код</li>
+                  <li class="skillItem__skill">Семантичная верстка</li>
+                  <li class="skillItem__skill">Структутированный код</li>
+                  <li class="skillItem__skill">Анимация, hover-эффекты без JS</li>
+                  <li class="skillItem__skill">PixelPerfect</li>
+                  <li class="skillItem__skill">Методология БЭМ</li>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
+<<<<<<< HEAD
               <div class="skills__name">
                 <h4>Javascript/JQuery</h4>
               </div>
@@ -103,10 +173,20 @@
                   <li class="skills__text-item">Настроенные JQuery плагины</li>
                   <li class="skills__text-item">API Карт - Яндекс</li>
                   <li class="skills__text-item">Комментируемый код</li>
+=======
+              <div class="skillItem">
+                <h4 class="skillItem__title subtitle">Javascript/JQuery</h4>
+                <ul class="skillItem__list">
+                  <li class="skillItem__skill">Свой Javascript/JQuery код</li>
+                  <li class="skillItem__skill">Настроенные JQuery плагины</li>
+                  <li class="skillItem__skill">API Карт - Яндекс</li>
+                  <li class="skillItem__skill">Комментируемый код</li>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
+<<<<<<< HEAD
               <div class="skills__name">
                 <h4>Photoshop/Figma</h4>
               </div>
@@ -117,10 +197,21 @@
                   <li class="skills__text-item">Экспорт SVG-изображений</li>
                   <li class="skills__text-item">Экспорт стилей для ускоренной верстки</li>
                   <li class="skills__text-item">Создание спрайтов</li>
+=======
+              <div class="skillItem">
+                <h4 class="skillItem__title subtitle">Photoshop/Figma</h4>
+                <ul class="skillItem__list">
+                  <li class="skillItem__skill">Нарезка изображений из макета</li>
+                  <li class="skillItem__skill">Оптимизация изображений для Web</li>
+                  <li class="skillItem__skill">Экспорт SVG-изображений</li>
+                  <li class="skillItem__skill">Экспорт стилей для ускоренной верстки</li>
+                  <li class="skillItem__skill">Создание спрайтов</li>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
+<<<<<<< HEAD
               <div class="skills__name">
                 <h4>Gulp/Pug</h4>
               </div>
@@ -131,10 +222,21 @@
                   <li class="skills__text-item">Компиляция препроцессоров</li>
                   <li class="skills__text-item">Использование шаблонизаторов </li>
                   <li class="skills__text-item">Минификация файлов</li>
+=======
+              <div class="skillItem">
+                <h4 class="skillItem__title subtitle">Gulp/Pug</h4>
+                <ul class="skillItem__list">
+                  <li class="skillItem__skill">Быстрое разворачивание проекта</li>
+                  <li class="skillItem__skill">Автоматизация процесса верстки</li>
+                  <li class="skillItem__skill">Компиляция препроцессоров</li>
+                  <li class="skillItem__skill">Использование шаблонизаторов </li>
+                  <li class="skillItem__skill">Минификация файлов</li>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
+<<<<<<< HEAD
               <div class="skills__name">
                 <h4>Bootstrap/Smart-grid</h4>
               </div>
@@ -144,10 +246,20 @@
                   <li class="skills__text-item">Кроссбраузерность и адаптивность сайта</li>
                   <li class="skills__text-item">Готовые шаблоны элементов сайта</li>
                   <li class="skills__text-item">Оптимизированная навигация</li>
+=======
+              <div class="skillItem">
+                <h4 class="skillItem__title subtitle">Bootstrap/Smart-grid</h4>
+                <ul class="skillItem__list">
+                  <li class="skillItem__skill">Высокая скорость разработки сайта</li>
+                  <li class="skillItem__skill">Кроссбраузерность и адаптивность сайта</li>
+                  <li class="skillItem__skill">Готовые шаблоны элементов сайта</li>
+                  <li class="skillItem__skill">Оптимизированная навигация</li>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
+<<<<<<< HEAD
               <div class="skills__name">
                 <h4>Less/Sass</h4>
               </div>
@@ -158,12 +270,23 @@
                   <li class="skills__text-item">Улучшенная логика стилей</li>
                   <li class="skills__text-item">Упрощенный синтаксис</li>
                   <li class="skills__text-item">Вложенность селекторов без ошибок</li>
+=======
+              <div class="skillItem">
+                <h4 class="skillItem__title subtitle">Less/Sass</h4>
+                <ul class="skillItem__list">
+                  <li class="skillItem__skill">Ускоренная стилизация сайта</li>
+                  <li class="skillItem__skill">Более гибкий код</li>
+                  <li class="skillItem__skill">Улучшенная логика стилей</li>
+                  <li class="skillItem__skill">Упрощенный синтаксис</li>
+                  <li class="skillItem__skill">Вложенность селекторов без ошибок</li>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
+<<<<<<< HEAD
       <section class="pageProofs">
         <div class="container">
           <h2 class="pageProofs__title wow slideInUp" id="pageproofs">Процесс верстки</h2>
@@ -220,11 +343,61 @@
                   <p>Устранение ошибок</p>
                 </div>
                 <div class="pageProofs__content-img"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>
+=======
+      <!--PAGEPROOFS-->
+      <section class="pageProofs">
+        <div class="container">
+          <div class="sectionTitle wow slideInUp" id="pageproofs">
+            <h2 class="sectionTitle__text" id="about">Процесс верстки</h2>
+            <div class="sectionTitle__icon"><i class="fa fa-legal" aria-hidden="true"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="step">
+                <div class="step__way step__way--way1"></div>
+                <div class="step__icon"><i class="fa fa-scissors" aria-hidden="true"></i></div>
+                <p class="step__name">Работа с макетом</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInRight" data-wow-delay=".2s">
+              <div class="step">
+                <div class="step__way step__way--way2"></div>
+                <p class="step__name">Верстка контента</p>
+                <div class="step__icon"><i class="fa fa-html5" aria-hidden="true"></i></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInRight" data-wow-delay=".4s">
+              <div class="step">
+                <div class="step__way step__way--way3"></div>
+                <div class="step__icon"><i class="fa fa-css3" aria-hidden="true"></i></div>
+                <p class="step__name">Стилизация сайта</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInRight" data-wow-delay=".6s">
+              <div class="step">
+                <div class="step__way step__way--way4"></div>
+                <p class="step__name">Адаптивная верстка</p>
+                <div class="step__icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInRight" data-wow-delay=".8s">
+              <div class="step">
+                <div class="step__way step__way--way5"></div>
+                <div class="step__icon"><i class="fa fa-internet-explorer" aria-hidden="true"></i></div>
+                <p class="step__name">Проверка в браузерах</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInRight" data-wow-delay="1s">
+              <div class="step">
+                <p class="step__name">Устранение ошибок</p>
+                <div class="step__icon"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
               </div>
             </div>
           </div>
           <div class="row justify-content-center">
             <h3 class="pageProofs__resurseTitle">Что я использую в процессе верстки</h3>
+<<<<<<< HEAD
             <div class="row justify-content-center"></div>
             <div class="pageProofs__resurse">
               <div class="pageProofs__resurse-button pageProofs__resurse-button-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
@@ -243,11 +416,31 @@
                 <div class="pageProofs__resurse-row-elem"><img src="img/figma.jpg" alt="Ресурсы"></div>
                 <div class="pageProofs__resurse-row-elem"><img src="img/pug.jpg" alt="Ресурсы"></div>
                 <div class="pageProofs__resurse-row-elem"><img src="img/smart.jpg" alt="Ресурсы"></div>
+=======
+            <div class="slider">
+              <div class="slider__button slider__button--prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+              <div class="slider__button slider__button--next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+              <div class="slider__row">
+                <div class="slider__item"><img class="img" src="img/avocode-logo.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/bootstrap-logo.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/gulp-logo.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/html-logo.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/JavaScript.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/jquery-logo.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/less-logo.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/photoshop-logo.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/pixel-logo.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/sass.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/figma.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/pug.jpg" alt="Ресурсы"></div>
+                <div class="slider__item"><img class="img" src="img/smart.jpg" alt="Ресурсы"></div>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
               </div>
             </div>
           </div>
         </div>
       </section>
+<<<<<<< HEAD
       <section class="works">
         <div class="container">
           <h2 class="works__title wow slideInUp" id="work">Портфолио</h2>
@@ -260,10 +453,28 @@
                 <li><a class="works__nav-elem filter" data-filter=".bootstrap"><span>Bootstrap</span></a></li>
                 <li><a class="works__nav-elem filter" data-filter=".smartgrid"><span>Smartgrid</span></a></li>
                 <li><a class="works__nav-elem filter" data-filter=".adaptive"><span>Без фреймворков</span></a></li>
+=======
+      <!--WORKS-->
+      <section class="works">
+        <div class="container">
+          <div class="sectionTitle sectionTitle--white wow slideInUp" id="work">
+            <h2 class="sectionTitle__text" id="about">Портфолио</h2>
+            <div class="sectionTitle__icon sectionTitle__icon--white"><i class="fa fa-camera" aria-hidden="true"></i></div>
+          </div>
+          <div class="row justify-content-center">
+            <nav class="worksNav">
+              <ul class="worksNav__nav">
+                <li class="worksNav__item"><a class="button worksNav__button filter" data-filter="all">Все работы</a></li>
+                <li class="worksNav__item"><a class="button worksNav__button filter" data-filter=".product">Выполненные</a></li>
+                <li class="worksNav__item"><a class="button worksNav__button filter" data-filter=".bootstrap">Bootstrap</a></li>
+                <li class="worksNav__item"><a class="button worksNav__button filter" data-filter=".smartgrid">Smartgrid</a></li>
+                <li class="worksNav__item"><a class="button worksNav__button filter" data-filter=".adaptive">Без фреймворков</a></li>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
               </ul>
             </nav>
           </div>
           <div class="row">
+<<<<<<< HEAD
             <div class="works__block" id="contianer">
               <div class="works__block-elem bootstrap product">
                 <div class="works__block-elem-way">
@@ -320,11 +531,70 @@
                     <p>Сборщик Gulp. Адаптив на bootstrap.Многостраничник. Сданный проект</p><a href="http://mikhalich.su/nano/" target="_blank">Посмотреть</a>
                   </div>
                 </div><img src="img/nano.png" alt="Сайт">
+=======
+            <div class="worksBox" id="contianer">
+              <div class="boxItem bootstrap product">
+                <div class="boxItem__way">
+                  <div class="boxItem__content">
+                    <p class="boxItem__text">Сборщик Gulp. Адаптив на bootstrap.Многостраничник. Сданный проект</p><a class="button boxItem__button" href="https://mikhalich2701.github.io/gmg/" target="_blank">Посмотреть</a>
+                  </div>
+                </div><img class="boxItem__img" src="img/gmg.jpg" alt="Сайт">
+              </div>
+              <div class="boxItem bootstrap">
+                <div class="boxItem__way">
+                  <div class="boxItem__content">
+                    <p class="boxItem__text">Сборщик Gulp. Адаптив на bootstrap</p><a class="button boxItem__button" href="https://mikhalich2701.github.io/introdiz/" target="_blank">Посмотреть</a>
+                  </div>
+                </div><img class="boxItem__img" src="img/introdiz.jpg" alt="Сайт">
+              </div>
+              <div class="boxItem bootstrap">
+                <div class="boxItem__way">
+                  <div class="boxItem__content">
+                    <p class="boxItem__text">Мой сайт. SVG-вариант</p><a class="button boxItem__button" href="http://mikhalich.su/newfolio/" target="_blank">Посмотреть</a>
+                  </div>
+                </div><img class="boxItem__img" src="img/newfolio.png" alt="Сайт">
+              </div>
+              <div class="boxItem bootstrap product">
+                <div class="boxItem__way">
+                  <div class="boxItem__content">
+                    <p class="boxItem__text">Сборщик Gulp. Адаптив на bootstrap.Многостраничник. Сданный проект</p><a class="button boxItem__button" href="http://mikhalich.su/ido/" target="_blank">Посмотреть</a>
+                  </div>
+                </div><img class="boxItem__img" src="img/ido.png" alt="Сайт">
+              </div>
+              <div class="boxItem bootstrap product">
+                <div class="boxItem__way">
+                  <div class="boxItem__content">
+                    <p class="boxItem__text">Сборщик Gulp. Адаптив на bootstrap. Сданный проект</p><a class="button boxItem__button" href="http://mikhalich.su/bigwin/" target="_blank">Посмотреть</a>
+                  </div>
+                </div><img class="boxItem__img" src="img/bigwin.png" alt="Сайт">
+              </div>
+              <div class="boxItem adaptive">
+                <div class="boxItem__way">
+                  <div class="boxItem__content">
+                    <p class="boxItem__text">Сайт с чистым js и адаптивом без фреймворков</p><a class="button boxItem__button" href="https://mikhalich2701.github.io/topclass/" target="_blank">Посмотреть</a>
+                  </div>
+                </div><img class="boxItem__img" src="img/topclass.jpg" alt="Сайт">
+              </div>
+              <div class="boxItem smartgrid">
+                <div class="boxItem__way">
+                  <div class="boxItem__content">
+                    <p class="boxItem__text">Сборщик Gulp. Адаптив на smartgrid. Многостраничник.</p><a class="button boxItem__button" href="https://mikhalich2701.github.io/socialagency/" target="_blank">Посмотреть</a>
+                  </div>
+                </div><img class="boxItem__img" src="img/social.jpg" alt="Сайт">
+              </div>
+              <div class="boxItem bootstrap product">
+                <div class="boxItem__way">
+                  <div class="boxItem__content">
+                    <p class="boxItem__text">Сборщик Gulp. Адаптив на bootstrap.Многостраничник. Сданный проект</p><a class="button boxItem__button" href="http://mikhalich.su/nano/" target="_blank">Посмотреть</a>
+                  </div>
+                </div><img class="boxItem__img" src="img/nano.png" alt="Сайт">
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
               </div>
             </div>
           </div>
         </div>
       </section>
+<<<<<<< HEAD
       <section class="contact">
         <div class="container">
           <h2 class="contact__title wow slideInUp" id="contact">Контакты</h2>
@@ -358,15 +628,63 @@
                 <div class="contact__elem-logo"><i class="fa fa-skype" aria-hidden="true"></i></div>
                 <h5 class="contact__elem-title">Skype</h5>
                 <p><a href="skype:live:mikhalich2701_1">live:mikhalich2701_1</a></p>
+=======
+      <!--CONTACT-->
+      <section class="contact">
+        <div class="container">
+          <div class="sectionTitle wow slideInUp" id="contact">
+            <h2 class="sectionTitle__text" id="about">Контакты</h2>
+            <div class="sectionTitle__icon"><i class="fa fa-comment" aria-hidden="true"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="contactItem contactItem--hover-bg1">
+                <div class="contactItem__logo"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <h5 class="contactItem__title">Адрес</h5>
+                <p class="contactItem__text">Russia</p>
+                <p class="contactItem__text">Moscow</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="contactItem contactItem--hover-bg2">
+                <div class="contactItem__logo"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <h5 class="contactItem__title">Email</h5>
+                <p class="contactItem__text"><a class="contactItem__link" href="mailto:mikhalich2701@gmail.com">mikhalich2701@gmail.com</a></p>
+                <p class="contactItem__text"><a class="contactItem__link" href="mailto:mikhalich2701@yandex.ru">mikhalich2701@yandex.ru</a></p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="contactItem contactItem--hover-bg3">
+                <div class="contactItem__logo"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                <h5 class="contactItem__title">Phone</h5>
+                <p class="contactItem__text"><a class="contactItem__link" href="tel:+79263636824">+7 (926) 363 68 24 </a></p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="contactItem contactItem--hover-bg4">
+                <div class="contactItem__logo"><i class="fa fa-skype" aria-hidden="true"></i></div>
+                <h5 class="contactItem__title">Skype</h5>
+                <p class="contactItem__text"><a class="contactItem__link" href="skype:live:mikhalich2701_1">live:mikhalich2701_1</a></p>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
               </div>
             </div>
           </div>
         </div>
       </section>
+<<<<<<< HEAD
       <section class="feedback">
         <div class="container">
           <h2 class="feedback__title wow slideInUp" id="feedback">Отправить заявку</h2>
           <div class="title__icon wow slideInUp"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+=======
+      <!--FEEDBACK-->
+      <section class="feedback">
+        <div class="container">
+          <div class="sectionTitle sectionTitle--white wow slideInUp" id="feedback">
+            <h2 class="sectionTitle__text" id="about">Отправить заявку</h2>
+            <div class="sectionTitle__icon sectionTitle__icon--white"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          </div>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
           <p class="feedback__text">Для того, чтобы определить сроки выполнеия и стоимость работ мне необходимы макеты сайта и техническое задание с требованиями по выполнению проекта.</p>
           <form class="form" id="myForm">
             <div class="row">
@@ -397,6 +715,7 @@
         </div>
       </section>
     </main>
+<<<<<<< HEAD
     <footer class="footer">
       <div class="container">
         <div class="row justify-content-center">
@@ -406,6 +725,16 @@
           <div class="footer__social-develop">
             <p class="wow slideInUp"><i class="fa fa-copyright" aria-hidden="true"></i><span>Portfolio</span> 2018 - Developed by <span>Alexey Mikhailovsky</span></p>
           </div>
+=======
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="footer__social social"><a class="social__item social__item--vk wow rollIn" href="https://vk.com/mikhaylovsky80" target="_blank" data-wow-duration="1s"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social__item social__item--facebook wow rollIn" href="https://www.facebook.com/profile.php?id=100008224726175&amp;ref=bookmarks" target="_blank" data-wow-duration="1s" data-wow-delay=".1s"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social__item social__item--ok wow rollIn" href="https://www.ok.ru/profile/524344028624" target="_blank" data-wow-duration="1s" data-wow-delay=".2s"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a><a class="social__item social__item--github wow rollIn" href="https://github.com/mikhalich2701" target="_blank" data-wow-duration="1s" data-wow-delay=".3s"><i class="fa fa-github-alt" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="row justify-content-center">
+          <p class="footer__develop wow slideInUp"><i class="fa fa-copyright" aria-hidden="true"></i><span>Portfolio</span> 2018 - Developed by <span>Alexey Mikhailovsky</span></p>
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
         </div>
       </div>
     </footer>

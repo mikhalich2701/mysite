@@ -1,0 +1,25 @@
+section.feedback
+				.container
+					#feedback.sectionTitle.sectionTitle--white.wow.slideInUp
+						h2#about.sectionTitle__text Отправить заявку
+						.sectionTitle__icon.sectionTitle__icon--white
+							i.fa.fa-envelope(aria-hidden="true")
+					p.feedback__text
+						| Для того, чтобы определить сроки выполнеия и стоимость работ мне необходимы макеты сайта и техническое задание с требованиями по выполнению проекта.
+					form#myForm.form
+						.row
+							.col-md-6
+								.form__block
+									.form__row
+										input.form__enter(type="text", name="name", placeholder="Ваше имя")
+									.form__row
+										input.form__enter(type="email", name="email", placeholder="Ваш Email")
+									.form__row
+										input.form__enter(type="text", name="subject", placeholder="Тема")
+							.col-md-6
+								.form__block
+									.form__row
+										textarea.form__textarea(name="message", placeholder="Ваше сообщение")
+									button.form__button(type="submit")
+										| Отправить
+					#answer

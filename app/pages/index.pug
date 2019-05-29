@@ -3,6 +3,7 @@ html(lang='ru')
 	head
 		include layout/head.pug
 	body
+<<<<<<< HEAD
 		header.header
 			.container-fluid
 				.row.d-flex.justify-content-lg-around.justify-content-md-start.align-items-center
@@ -371,6 +372,28 @@ html(lang='ru')
 							span Portfolio
 							|  2018 - Developed by 
 							span Alexey Mikhailovsky
+=======
+		//HEADER
+		include layout/header.pug
+		//MAIN
+		main.main
+			//PROFILE
+			include layout/profile.pug
+			//ABOUTME
+			include layout/aboutme.pug
+			//SKILLS
+			include layout/skills.pug
+			//PAGEPROOFS
+			include layout/pageproofs.pug
+			//WORKS
+			include layout/works.pug
+			//CONTACT
+			include layout/contact.pug
+			//FEEDBACK
+			include layout/feedback.pug
+		//FOOTER
+		include layout/footer.pug
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
 		include layout/scripts.pug
 
 

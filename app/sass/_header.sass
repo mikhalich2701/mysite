@@ -1,0 +1,43 @@
+/*=========================HEADER==========================*/
+
+.header
+	width: 100%
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 300
+	width: 100%
+	background: rgba($accent, .8)		
+	&__logo
+		margin-top: 10px
+		+r(576)
+			& img
+				width: 250px
+	&__btnGuide
+		display: none
+		top: 21%
+		right: 5%
+		z-index: 200
+	+r(992)
+		&__btnGuide
+			display: block
+
+.header__navbar
+	+r(992)
+		display: none
+		position: absolute
+		width: 100%
+		left: 0
+		top: 100%
+		z-index: 200
+.navbar__nav--header
+	+r(992)
+		display: block
+.navbar__item--header
+	+r(992)
+		display: block
+		text-align: center
+.navbar__link--header
+	+r(992)
+		border-bottom: 1px solid #ccc
+		background: rgba(0, 0, 0, 0.6)

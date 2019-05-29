@@ -2,15 +2,24 @@ $( document ).ready(function() {
 
     // Настройка слайдера
 
+<<<<<<< HEAD
     $('.pageProofs__resurse-row').slick({             
+=======
+    $('.slider__row').slick({             
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
         arrows: true,
         autoplay: true,
   		autoplaySpeed: 2000,
+<<<<<<< HEAD
         nextArrow: '.pageProofs__resurse-button-next',
         prevArrow: '.pageProofs__resurse-button-prev',
+=======
+        nextArrow: '.slider__button--next',
+        prevArrow: '.slider__button--prev',
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
         responsive: [
         {
           breakpoint: 992,
@@ -38,7 +47,11 @@ $( document ).ready(function() {
 
     $('#contianer').mixItUp({
         selectors: {
+<<<<<<< HEAD
             target: '.works__block-elem'
+=======
+            target: '.boxItem'
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
         }
     });
 
@@ -55,8 +68,13 @@ $( document ).ready(function() {
 
     // Анимация кнопки меню при клике
 
+<<<<<<< HEAD
     $('.headerUp__navicon').click(function () {        
         if ($(this).attr('class') == 'headerUp__navicon change') {
+=======
+    $('.header__btnGuide').click(function () {        
+        if ($(this).hasClass('change')) {
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
             $(this).removeClass('change');
         } else {
             $(this).addClass('change');
@@ -65,6 +83,7 @@ $( document ).ready(function() {
 
     // Анимация выпадающего меню
 
+<<<<<<< HEAD
     $('.headerUp__navicon').click(function(){          
         $('.mainMenu').slideToggle();
     });
@@ -73,6 +92,16 @@ $( document ).ready(function() {
         $('.headerUp__navicon').removeClass('change');
         if ($(window).width() <= 992) {
             $('.mainMenu').slideToggle();
+=======
+    $('.header__btnGuide').click(function(){          
+        $('.header__navbar').slideToggle();
+    });
+
+    $('.navbar__link').click(function(){ 
+        $('.header__btnGuide').removeClass('change');
+        if ($(window).width() <= 992) {
+            $('.header__navbar').slideToggle();
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
         }
     });
 
@@ -80,12 +109,17 @@ $( document ).ready(function() {
 
     $(window).resize(function() {                        
         if ($(window).width() > 992) {
+<<<<<<< HEAD
             $('.mainMenu').removeAttr('style');
+=======
+            $('.navbar').removeAttr('style');
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
         }
     });
 
     // Появление кнопки скролла
 
+<<<<<<< HEAD
     $(window).scroll(function () {
         var interval = $('.headerDown').height();
     	var scrollBar = $('.skills').height();        
@@ -93,16 +127,31 @@ $( document ).ready(function() {
 			$('.headerDown__scrollBtn').css("display", "block");  
 		} else {
 			$('.headerDown__scrollBtn').css("display", "none");
+=======
+    $(window).scroll(function () {       
+		if ($(this).scrollTop() > $(window).height() * 0.2) {
+			$('.btnScroll').css("display", "flex");  
+		} else {
+			$('.btnScroll').css("display", "none");
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
 		}
 
     // Затемнение пунктов меню по скроллу
 
+<<<<<<< HEAD
         $('h2').each(function() {
+=======
+        $('.sectionTitle').each(function() {
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
             var self = $(this),
                 atribute = self.attr('id'),
                 height = self.offset().top + self.height()/2 - windowHeight/2;
             if ($(document).scrollTop() >= height) {
+<<<<<<< HEAD
                 $('.mainMenu__elem').removeClass('menuBg');
+=======
+                $('.navbar__link--header').removeClass('menuBg');
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
                 $('[href*="' + atribute + '"]').addClass('menuBg');
             } else {
                 $('[href*="' + atribute + '"]').removeClass('menuBg');
@@ -112,7 +161,11 @@ $( document ).ready(function() {
 
     // Скролл к началу страницы
 
+<<<<<<< HEAD
 	$('.headerDown__scrollBtn').click(function() {         
+=======
+	$('.btnScroll').click(function() {         
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 		return false;
 	});

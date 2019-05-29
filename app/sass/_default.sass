@@ -1,0 +1,96 @@
+/*====================DEFAULT SETTINGS=================*/
+
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+	font-family: $mainfont
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
+	font-family: $titlefont
+	letter-spacing: 2px
+h1, .h1
+	font-size: 56px
+	text-transform: uppercase
+h3, .h3
+	font-size: 28px
+h5, .h5
+	font-size: 20px
+h6, .h6
+	font-size: 18px
+
+a
+  text-decoration: none
+  &:hover
+  	text-decoration: none
+
+/*================================ADD CLASS=============================*/
+
+.img
+	display: block
+	max-width: 100%
+	height: auto
+.change
+	span
+		background: transparent!important
+		&:after
+			top: 0px!important
+			transform: rotate(-135deg)
+		&:before
+			top: 0px!important
+			transform: rotate(135deg)
+.menuBg
+	background: $secondcolor
+label.error
+	position: absolute
+	width: 100%
+	left: 0
+	top: 60px
+	color: #c62828
+	font-size: 13px
+	font-weight: bold
+#message-error
+	top: 155px
+.contact-form__success
+	position: relative
+	+push-auto
+	display: block
+	max-width: 300px
+	padding: 5px
+	font-size: 20px
+	font-weight: 600
+	color: #fff
+	text-align: center
+	border: 2px solid #fff
+	transition: all 0.3s
+	cursor: pointer
+	&:hover
+		color: $accent
+		background: #fff

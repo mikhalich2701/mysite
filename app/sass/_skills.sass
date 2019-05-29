@@ -1,0 +1,39 @@
+/*=======================SKILLS========================*/
+
+.skills
+	position: relative
+	padding: 50px
+	background: url('../img/quality-bg1.jpg') 50% 0 no-repeat
+	background-size: cover
+	background-attachment: fixed
+	&:before
+		position: absolute
+		content: ""
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background: radial-gradient(ellipse at center, rgba(#9e9e9e, .7) 0%,rgba(#9e9e9e, .7) 0%,
+		rgba(#424242, .7) 52%,rgba(#000, .7) 100%), url('../img/pattern.png')
+	+r(576)
+		padding: 20px
+.skillItem
+	&__title
+		margin-bottom: 20px
+		color: #fff	
+	&__list
+		margin-bottom: 40px
+		font-size: 20px
+		color: #fff
+		padding-left: 30px
+	&__skill
+		position: relative
+		margin-bottom: 10px
+		&:after
+			+pseudo
+			width: 10px
+			height: 10px
+			left: -30px
+			top: 5px
+			background: #fff
+			transform: rotate(45deg)

@@ -1,0 +1,76 @@
+/*==========================CONTACT=========================*/
+
+.contact
+	padding: 100px 0
+	background: #fff
+.contactItem
+	position: relative
+	width: 200px
+	border-radius: 50%
+	margin: 0 auto
+	font-family: 'ralewaybold', sans-serif
+	text-align: center
+	box-sizing: border-box
+	color: $accent
+	z-index: 100
+	&:hover::before
+		top: 6px
+		left: 30px
+		opacity: 1		
+	&:before
+		content: ""
+		position: absolute
+		width: 150px
+		height: 150px
+		top: 0px
+		left: 15px
+		border-radius: 50%
+		opacity: 0
+		transition: .5s
+		z-index: -1		
+	&__logo
+		display: inline-block
+		width: 150px
+		height: 150px
+		border-radius: 50%
+		border: 5px solid #fff
+		background: $accent
+		color: #fff
+		font-size: 64px
+		line-height: 132px		
+	&__title
+		padding: 20px 0
+		font-family: 'ralewaybold', sans-serif
+		font-size: 28px
+		color: $accent	
+	&__text
+		margin-bottom: 10px
+		font-size: 16px
+	&__link
+		color: $accent
+	&--hover-bg1
+		&:hover .contactItem__logo
+			background: #36a955
+		&:before
+			background: #36a955
+	&--hover-bg2
+		&:hover .contactItem__logo
+			background: #d93025
+		& .contactItem__link:hover
+			color: #d93025
+		&:before
+			background: #d93025
+	&--hover-bg3
+		&:hover .contactItem__logo
+			background: $accent
+		& .contactItem__link:hover
+			color: $accent
+		&:before
+			background: $accent
+	&--hover-bg4
+		&:hover .contactItem__logo 
+			background: #00aff0
+		& .contactItem__link:hover
+			color: #00aff0
+		&:before
+			background: #00aff0

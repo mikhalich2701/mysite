@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 
 /*******************       Фигуры      ***************************/
 
+=======
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
 /*====================DEFAULT SETTINGS=================*/
 
 * {
@@ -1018,7 +1021,20 @@ label.error {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .footer__social-elem {
+=======
+.footer__develop {
+  text-align: center;
+}
+
+.footer__develop i,
+.footer__develop span {
+  font-weight: bold;
+}
+
+.social__item {
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -1036,11 +1052,19 @@ label.error {
   z-index: 10;
 }
 
+<<<<<<< HEAD
 .footer__social-elem:hover {
   color: white;
 }
 
 .footer__social-elem:hover::after {
+=======
+.social__item:hover {
+  color: white;
+}
+
+.social__item:hover::after {
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
   left: 0;
   bottom: 0;
   right: 0;
@@ -1048,10 +1072,16 @@ label.error {
   opacity: 1;
 }
 
+<<<<<<< HEAD
 .footer__social-elem:after {
   content: "";
   position: absolute;
   background: #4c75a3;
+=======
+.social__item:after {
+  content: "";
+  position: absolute;
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
   -webkit-border-radius: 50%;
   border-radius: 50%;
   left: -10px;
@@ -1065,6 +1095,7 @@ label.error {
   transition: .3s;
 }
 
+<<<<<<< HEAD
 .footer__social .facebook:after {
   background: #3b5998;
 }
@@ -1086,6 +1117,24 @@ label.error {
   font-weight: bold;
 }
 
+=======
+.social__item--vk:after {
+  background: #4c75a3;
+}
+
+.social__item--facebook:after {
+  background: #3b5998;
+}
+
+.social__item--ok:after {
+  background: #ff7f50;
+}
+
+.social__item--github:after {
+  background: #24292e;
+}
+
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
 /*==============================MEDIA============================*/
 
 @media only screen and (max-width: 1200px) {
@@ -1248,13 +1297,18 @@ label.error {
     width: 100%;
     margin-bottom: 20px;
   }
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 576px) {
+=======
+
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
   .footer {
     padding: 20px 10px;
   }
 
+<<<<<<< HEAD
   .footer__social-elem {
     margin: 0 5px;
     margin-bottom: 20px;
@@ -1262,6 +1316,15 @@ label.error {
 
   .footer__social-develop {
     font-size: 13px;
+=======
+  .footer__develop {
+    font-size: 13px;
+  }
+
+  .social__item {
+    margin: 0 5px;
+    margin-bottom: 20px;
+>>>>>>> cc6cf5e9352b45ef9be04eb06b9772ef4488731f
   }
 }
 
