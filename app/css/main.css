@@ -161,6 +161,11 @@ label.error {
 
 /*==================================BEM===============================*/
 
+.logo {
+  display: block;
+  width: 100%;
+}
+
 .sectionTitle {
   position: relative;
   padding-bottom: 10px;
@@ -328,7 +333,7 @@ label.error {
 .navbar__link {
   position: relative;
   display: block;
-  padding: 31px 14px;
+  padding: 16px 14px;
   font-size: 20px;
   color: #fff;
   -webkit-transition: color .3s;
@@ -366,15 +371,15 @@ label.error {
 .header {
   width: 100%;
   position: fixed;
+  padding: 15px;
   left: 0;
   top: 0;
   z-index: 300;
   width: 100%;
-  background: rgba(44, 62, 80, 0.8);
 }
 
 .header__logo {
-  margin-top: 10px;
+  width: 150px;
 }
 
 .header__btnGuide {
@@ -1197,10 +1202,6 @@ label.error {
 }
 
 @media only screen and (max-width: 576px) {
-  .header__logo img {
-    width: 250px;
-  }
-
   .skills {
     padding: 20px;
   }
