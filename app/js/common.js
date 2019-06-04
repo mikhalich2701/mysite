@@ -106,6 +106,18 @@ $( document ).ready(function() {
                 $('[href*="' + atribute + '"]').removeClass('menuBg');
             }
         });
+
+        $('.paralax').each(function() {
+            var self = $(this),
+                heightTop = self.offset().top - windowHeight,
+                heightBottom = self.offset().top + self.height(),
+                velocity = ($(document).scrollTop() - self.offset().top) * 0.07;
+            if ($(document).scrollTop() >= heightTop && $(document).scrollTop() <= heightBottom) {
+                self.css('background-position-y', `${velocity}%`);
+            } else {
+                return false;
+            }
+        });
 	});
 
     // Скролл к началу страницы
