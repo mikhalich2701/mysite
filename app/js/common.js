@@ -102,10 +102,10 @@ $( document ).ready(function() {
                 atributeTitle = self.attr('id'),
                 heightTitle = self.offset().top + self.height()/2 - windowHeight/2;
             if ($(document).scrollTop() >= heightTitle) {
-                $('.navbar__link--header').removeClass('menuBg');
-                $('[href*="' + atributeTitle + '"]').addClass('menuBg');
+                $('.navbar__link--header').css('color', '#fff');
+                $('[href*="' + atributeTitle + '"]').css('color', '#46B6A0');
             } else {
-                $('[href*="' + atributeTitle + '"]').removeClass('menuBg');
+                $('[href*="' + atributeTitle + '"]').css('color', '#fff');
             }
         });
 
