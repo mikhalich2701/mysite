@@ -86,8 +86,10 @@ $( document ).ready(function() {
 
     // Появление кнопки скролла
 
-    $(window).scroll(function () {       
-		if ($(this).scrollTop() > $(window).height() * 0.2) {
+    $(window).scroll(function () {  
+        let scrollWin = $(this).scrollTop();    
+        let heightWin = $(this).height();    
+		if (scrollWin > heightWin * 0.2) {
 			$('.btnScroll').css("display", "flex");  
 		} else {
 			$('.btnScroll').css("display", "none");
@@ -97,25 +99,23 @@ $( document ).ready(function() {
 
         $('.sectionTitle').each(function() {
             var self = $(this),
-                atribute = self.attr('id'),
-                height = self.offset().top + self.height()/2 - windowHeight/2;
-            if ($(document).scrollTop() >= height) {
+                atributeTitle = self.attr('id'),
+                heightTitle = self.offset().top + self.height()/2 - windowHeight/2;
+            if ($(document).scrollTop() >= heightTitle) {
                 $('.navbar__link--header').removeClass('menuBg');
-                $('[href*="' + atribute + '"]').addClass('menuBg');
+                $('[href*="' + atributeTitle + '"]').addClass('menuBg');
             } else {
-                $('[href*="' + atribute + '"]').removeClass('menuBg');
+                $('[href*="' + atributeTitle + '"]').removeClass('menuBg');
             }
         });
 
-        $('.paralax').each(function() {
-            var self = $(this),
-                heightTop = self.offset().top - windowHeight,
-                heightBottom = self.offset().top + self.height(),
-                velocity = ($(document).scrollTop() - self.offset().top) * 0.07;
-            if ($(document).scrollTop() >= heightTop && $(document).scrollTop() <= heightBottom) {
-                self.css('background-position-y', `${velocity}%`);
-            } else {
-                return false;
+        $('.paralax').each(function(i) {
+            let self = $(this);
+            let pos = self.position().top;
+            let hei = self.height();
+            if ((scrollWin + heightWin) > pos && scrollWin < (pos + hei)) {
+                let velocity = (pos - scrollWin);
+                self.css('background-position-y', `${velocity * 0.5}px`);
             }
         });
 	});

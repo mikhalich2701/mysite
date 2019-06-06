@@ -1,0 +1,52 @@
+<svg width="210" height="90" viewBox="0 0 210 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<g>
+			<linearGradient id="grad2" gradientTransform="rotate(50) translate(0.6, 0.6)">
+				<stop stop-color="#F8747F" offset="0%" />
+				<stop stop-color="#F8747F" offset="100%" />
+			</linearGradient>
+			<linearGradient id="grad3" gradientTransform="rotate(100) translate(0.1, 0.1)">
+				<stop stop-color="#C3253F" offset="0%" />
+				<stop stop-color="#F8747F" offset="50%" />
+				<stop stop-color="#F8A9B0" offset="100%" />
+			</linearGradient>
+			<linearGradient id="grad4" gradientTransform="rotate(-20) translate(0.1, 0.1)">
+				<stop stop-color="#B2223A" offset="0%" />
+				<stop stop-color="#E75B67" offset="50%" />
+				<stop stop-color="#F8A9B0" offset="100%" />
+			</linearGradient>
+			<linearGradient id="grad5">
+				<stop stop-color="#8C1A2D" offset="0%" />
+				<stop stop-color="#AB253B" offset="70%" />
+				<stop stop-color="#D22744" offset="100%" />
+			</linearGradient>
+			<linearGradient id="grad6" gradientTransform="rotate(50) translate(0.1, 0.1)">
+				<stop stop-color="#8C1A2D" offset="0%" />
+				<stop stop-color="#AB253B" offset="70%" />
+				<stop stop-color="#D22744" offset="100%" />
+			</linearGradient>
+			<linearGradient id="grad7" gradientTransform="rotate(60) translate(0.01, 0.01)">
+				<stop stop-color="#8C1A2D" offset="0%" />
+				<stop stop-color="#AB253B" offset="70%" />
+				<stop stop-color="#D22744" offset="100%" />
+			</linearGradient>
+		</g>
+	</defs>
+	<g>
+		<g stroke='none' fill='none'>
+			<path d='M0 90L140 60 50 70Z' fill="url(#grad7)"  />
+			<path d='M0 90L140 0 137 19 50 70Z' fill="url(#grad2)" />
+			<path d='M140 60H104L50 70Z' fill='#901B2F'/>
+			<path d='M104 60 L50 70 137 19 133 41Z' fill="url(#grad6)" />
+			<path d='M137 19L155 44 170 90 133 41Z' fill="url(#grad3)" />
+			<path d='M140 0L170 40 155 44 137 19Z' fill="url(#grad4)" />
+			<path d='M170 40V90L155 44Z' fill="url(#grad5)" />
+		</g>
+		<g stroke='none' fill='none' >
+			<path d='M155 15L180 0 177 19Z' fill="url(#grad2)" />
+			<path d='M210 90 L195 44 210 40Z' fill="url(#grad5)" />
+			<path d='M180 0L210 40 195 44 177 19Z' fill="url(#grad4)" />
+			<path d='M155 15L210 90 195 44 177 19Z' fill="url(#grad3)" />
+		</g>
+	</g>
+</svg>
